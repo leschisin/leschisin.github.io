@@ -15,7 +15,9 @@ $(document).ready(function() {
 
 		let scrollTop = $(window).scrollTop();
 		let scaleAmt = 1 - (scrollTop / 1000);
-		$('.hero-img').css('transform', 'scale(' + scaleAmt + ')');
+		if(scaleAmt > 0) {
+			$('.hero-img').css('transform', 'scale(' + scaleAmt + ')');
+		}
 
 	});
 
