@@ -1,37 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
 
     <!-- META -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Steve Leschisin</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="css/index.css">
 
-    <title>Steve Leschisin</title>
+    <!-- JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="js/index.js"></script>
 
   </head>
   <body>
 
-    <style>
-      .hero {
-        height: 75vh;
-        background: url('img/Alyssa-Steve_W054.JPG');
-        background-position: center;
-        background-size: cover;
-      }
-    </style>
+    <!-- HEADER -->
+    <header class="navbar is-fixed-top">
+      <nav class="level is-fullwidth">
+        <div class="level-item header-brand has-text-left-mobile">
+          <span class="is-hidden-mobile is-size-3"><a href="https://leschisin.github.io">Steve Leschisin</a></span>
+          <span class="is-hidden-tablet is-size-3">SL</span>
+        </div>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </nav>
+    </header>
 
-    <div class="container-fluid px-0">
-      <div class="row mx-0">
-        <div class="col px-0 hero"></div>
+    <!-- MENU -->
+    <div class="site-menu is-hidden">
+      <div class="has-text-centered">
+        <a class="menu-item is-size-3-mobile is-size-2-tablet is-size-1-desktop" href="#">Home</a>
+        <a class="menu-item is-size-3-mobile is-size-2-tablet is-size-1-desktop" href="#">Experience</a>
+        <a class="menu-item is-size-3-mobile is-size-2-tablet is-size-1-desktop" href="#">Resume</a>
+        <a class="menu-item is-size-3-mobile is-size-2-tablet is-size-1-desktop" href="#">LinkedIn</a>
       </div>
     </div>
 
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- BADGE -->
+    <div class="site-badge">
+      <img src="img/badge.jpg" alt="Steve Leschisin" />
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="has-navbar-fixed-top">
+    
+      <section class="hero-badge">
+        <div class="container is-fluid is-flex">
+          <img class="hero-img" data-aos="zoom-in" src="img/badge.jpg" alt="Steve Leschisin" />
+        </div>
+      </section>
+
+      <section class="hero-intro">
+        <div class="container is-fluid has-text-centered" data-aos="zoom-in-up">
+          <h2 class="is-size-4-mobile is-size-3-tablet">Father, Husband, Nerd, Web&nbsp;Developer</h2>
+          <p class=" is-size-6-mobile is-size-5-tablet">Hi, I'm Steve. I'm a front end developer based in Fort Worth, TX. For the past 6 years I've served as the Senior Front End Developer for American Girl. I love taking beautiful UX designs and turning them into kick ass websites.</p>
+        </div>
+      </section>
+
+    </main>
+
   </body>
 </html>
