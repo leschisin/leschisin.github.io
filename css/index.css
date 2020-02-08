@@ -107,6 +107,7 @@ header.navbar .navbar-burger span {
 	background: linear-gradient(180deg, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 50%, rgba(242,242,242,1) 50%, rgba(242,242,242,1) 100%);
 }
 .hero-badge .hero-img {
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 	max-width: 300px;
 	width: auto;
