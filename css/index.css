@@ -17,9 +17,6 @@ html.overflow-hidden {
 }
 
 /* HELPERS */
-body {
-	height: 10000px;
-}
 main.has-navbar-fixed-top {
 	padding-top: 60px;
 }
@@ -129,6 +126,29 @@ header.navbar .navbar-burger span {
 	font-family: var(--copy-font);
 }
 
+/* EXPERTISE */
+.expertise {
+	padding: 60px 32px;
+}
+.expertise .headline {
+	margin-bottom: 60px;
+}
+h2.headline {
+	font-family: var(--copy-fonttwo);
+	font-weight: 800;
+}
+.expertise h3 {
+	font-family: var(--copy-fonttwo);
+}
+.expertise .box {
+	height: 100%;
+	font-family: var(--copy-font);
+	padding: 30px;
+}
+.expertise .fa-3x {
+	color: var(--brand-color);
+}
+
 @media (min-width: 769px) {
 
 	/* HEADER */
@@ -149,6 +169,11 @@ header.navbar .navbar-burger span {
 	/* HERO BADGE */
 	.hero-badge .hero-img {
 		max-width: 400px;
+	}
+
+	/* EXPERTISE */
+	.expertise .box {
+		padding: 60px;
 	}
 }
 
