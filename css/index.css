@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700&display=swap');
+
+/* VARIABLES */
+:root {
+	--header-height: 80px;
+	--brand-primary: #F62459;
+	--open-sans: 'Open Sans', sans-serif;
+	--montserrat: 'Montserrat', sans-serif;
+}
+
+/* TEMP */
+html {
+	height: 10000px !important;
+}
+
+/* HELPERS */
+body.no-overflow {
+	overflow-y: hidden;
+}
+.adjust-for-navbar {
+	padding-top: var(--header-height);
+}
+
+/* STICKY NAVBAR */
+.sticky-navbar {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: transparent;
+	transition: all 0.4s;
+	font-family: var(--montserrat);
+}
+.sticky-navbar.dark {
+	background-color: rgba(0,0,0,0.8);
+}
+	.sticky-navbar header {
+		height: var(--header-height);
+	}
+		.sticky-navbar header .brand {
+			position: relative;
+			color: #FFF;
+			font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1200 - 320)));
+			font-weight: 600;
+			text-decoration: none;
+		}
+			.sticky-navbar header .brand:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 2px;
+				display: inline;
+				margin: auto;
+				height: 2px;
+				width: 0;
+				background: var(--brand-primary);
+				transition: width .25s ease;
+			}
+			.sticky-navbar header .brand:hover:after {
+				width: 100%;
+			}
+			.sticky-navbar header .brand span {
+				color: var(--brand-primary);
+			}
+		.sticky-navbar header nav .menu.desktop a {
+			position: relative;
+			text-decoration: none;
+			color: #FFF;
+			font-weight: 500;
+			margin: 0 30px;
+		}
+			.sticky-navbar header nav .menu.desktop a:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -4px;
+				display: inline;
+				margin: auto;
+				height: 2px;
+				width: 0;
+				background: var(--brand-primary);
+				transition: width .25s ease;
+			}
+			.sticky-navbar header nav .menu.desktop a:hover:after {
+				width: 100%;
+			}
+		.sticky-navbar header nav .menu.mobile {
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 80px;
+			max-height: 0;
+			opacity: 0;
+			overflow: hidden;
+			transition: all 0.4s;
+		}
+		.sticky-navbar header nav .menu.mobile.is-active {
+			max-height: 1000px;
+			opacity: 1;
+		}
+			.sticky-navbar header nav .menu.mobile a {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				height: 80px;
+				color: #FFF;
+				text-decoration: none;
+				font-weight: 500;
+				padding: 0 15px;
+				background-color: rgba(0,0,0,0.8);
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			}
+		.sticky-navbar header nav .hamburger {
+			padding: 0;
+			height: 24px;
+			outline: none !important;
+		}
+			.sticky-navbar header nav .hamburger.is-active:hover,
+			.sticky-navbar header nav .hamburger:hover {
+				opacity: 1;
+			}
+			.sticky-navbar header nav .hamburger .hamburger-box {
+				width: 30px;
+				height: 24px;
+			}
+				.sticky-navbar header nav .hamburger .hamburger-box .hamburger-inner,
+				.sticky-navbar header nav .hamburger .hamburger-box .hamburger-inner:after,
+				.sticky-navbar header nav .hamburger .hamburger-box .hamburger-inner:before {
+					width: 30px;
+					height: 2px;
+					background-color: #FFF;
+				}
+				
+
+/* HERO */
+.hero {
+	position: relative;
+	overflow: hidden;
+	height: 400px;
+}
+	.hero .hero-bg {
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url(../img/dexter.jpg);
+		background-size: cover;
+		background-position: center;
+		-webkit-filter: brightness(0.5) grayscale(1);
+		filter: brightness(0.5) grayscale(1);
+	}
+	.hero .hero-text {
+		color: #FFF;
+		font-family: var(--open-sans);
+		width: 100%;
+		height: 100%;
+	}
+		.hero .hero-text h2 {
+			font-size: calc(40px + (80 - 40) * ((100vw - 320px) / (1200 - 320)));
+			font-weight: 700;
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+		}
+		.hero .hero-text p {
+			font-size: calc(16px + (30 - 16) * ((100vw - 320px) / (1200 - 320)));
+			font-weight: 600;
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+		}
+		.hero .hero-text .btn {
+			color: #FFF;
+			font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+			font-weight: 700;
+			background: var(--brand-primary);
+			text-transform: uppercase;
+			border-radius: 30px;
+			padding: 12px 25px;
+			outline: none !important;
+			box-shadow: none;
+		}
+
+/* SMALL+ */
+@media (min-width: 576px) {
+
+}
+
+/* MEDIUM+ */
+@media (min-width: 768px) {
+
+	/* HELPERS */
+	body.no-overflow {
+		overflow-y: auto;
+	}
+
+	/* HERO */
+	.hero {
+		height: 500px;
+	}
+
+}
+
+/* LARGE+ */
+@media (min-width: 992px) {
+
+	/* HERO */
+	.hero {
+		height: 600px;
+	}
+
+}
+
+/* XLARGE+ */
+@media (min-width: 1200px) {
+
+	/* STICKY NAVBAR */
+	.sticky-navbar header .brand {
+		font-size: 25px;
+	}
+
+	/* HERO */
+	.hero {
+		height: 700px;
+	}
+		.hero .hero-text h2 {
+			font-size: 80px;
+		}
+		.hero .hero-text p {
+			font-size: 30px;
+		}
+		.hero .hero-text .btn {
+			font-size: 16px;
+		}
+
+}
