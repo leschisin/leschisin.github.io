@@ -117,6 +117,13 @@
 
 				});
 
+				// WINDOW LOAD FUNCTIONS
+				window.addEventListener('load', () => {
+
+					navReset();
+
+				});
+
 				// HAMBURGER CLICKS
 				document.querySelector('.hamburger').addEventListener('click', () => {
 
@@ -132,6 +139,12 @@
 						document.querySelector('.hamburger').classList.remove('is-active');
 						if(window.pageYOffset === 0) {
 							document.querySelector('.sticky-navbar').classList.remove('dark');
+						} else if(window.pageYOffset > 0) {
+							document.querySelector('.sticky-navbar').classList.add('dark');
+						}
+					} else {
+						if(window.pageYOffset > 0) {
+							document.querySelector('.sticky-navbar').classList.add('dark');
 						}
 					}
 				}
