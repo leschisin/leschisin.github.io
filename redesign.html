@@ -37,9 +37,9 @@
 					<nav class="ml-auto">
 						<div class="menu desktop d-none d-md-block">
 							<a href="https://leschisin.github.io">Home</a>
-							<a href="#">About</a>
-							<a href="#">Work</a>
-							<a href="#">Contact</a>
+							<a href="#click">About</a>
+							<a href="#click">Work</a>
+							<a href="#click">Contact</a>
 						</div>
 						<div class="d-block d-md-none d-flex">
 							<button class="hamburger hamburger--spin" type="button">
@@ -50,9 +50,9 @@
 						</div>
 						<div class="menu mobile">
 							<a href="https://leschisin.github.io">Home</a>
-							<a href="#">About</a>
-							<a href="#">Work</a>
-							<a href="#">Contact</a>
+							<a href="#click">About</a>
+							<a href="#click">Work</a>
+							<a href="#click">Contact</a>
 						</div>
 					</nav>
 
@@ -133,6 +133,7 @@
 
 				// RESET NAV CLASSES
 				navReset = () => {
+					document.querySelector('.menu.mobile').style.display = 'block';
 					if(window.innerWidth >= 768) {
 						document.body.classList.remove('no-overflow');
 						document.querySelector('.menu.mobile').classList.remove('is-active');
