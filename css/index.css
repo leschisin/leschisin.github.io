@@ -165,8 +165,8 @@ body.no-overflow {
 			font-weight: 600;
 			text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 		}
-		.hero .hero-text .btn {
-			color: #FFF;
+		.button {
+			color: #FFF !important;
 			font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
 			font-weight: 700;
 			background: var(--brand-primary);
@@ -175,6 +175,7 @@ body.no-overflow {
 			padding: 12px 25px;
 			outline: none !important;
 			box-shadow: none;
+			text-decoration: none !important;
 		}
 
 /* SMALL+ */
@@ -225,7 +226,7 @@ body.no-overflow {
 		.hero .hero-text p {
 			font-size: 30px;
 		}
-		.hero .hero-text .btn {
+		.button {
 			font-size: 16px;
 		}
 

@@ -37,9 +37,9 @@
 					<nav class="ml-auto">
 						<div class="menu desktop d-none d-md-block">
 							<a href="https://leschisin.github.io">Home</a>
-							<a href="#click">About</a>
-							<a href="#click">Work</a>
-							<a href="#click">Contact</a>
+							<a href="https://leschisin.github.io/about">About</a>
+							<a href="https://leschisin.github.io/portfolio">Portfolio</a>
+							<a href="https://leschisin.github.io/contact">Contact</a>
 						</div>
 						<div class="d-block d-md-none d-flex">
 							<button class="hamburger hamburger--spin" type="button">
@@ -50,9 +50,9 @@
 						</div>
 						<div class="menu mobile">
 							<a href="https://leschisin.github.io">Home</a>
-							<a href="#click">About</a>
-							<a href="#click">Work</a>
-							<a href="#click">Contact</a>
+							<a href="https://leschisin.github.io/about">About</a>
+							<a href="https://leschisin.github.io/portfolio">Portfolio</a>
+							<a href="https://leschisin.github.io/contact">Contact</a>
 						</div>
 					</nav>
 
@@ -64,35 +64,34 @@
 
 		<!-- HERO -->
 		<style>
-		.hero svg {
-			height: 15px;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			transform: scaleY(-1);
-			fill: #FFF !important;
-		}
-		@media (min-width: 576px) {
 			.hero svg {
-				height: 25px;
+				height: 15px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				fill: #FFF !important;
 			}
-		}
-		@media (min-width: 768px) {
-			.hero svg {
-				height: 35px;
+			@media (min-width: 576px) {
+				.hero svg {
+					height: 25px;
+				}
 			}
-		}
-		@media (min-width: 992px) {
-			.hero svg {
-				height: 45px;
+			@media (min-width: 768px) {
+				.hero svg {
+					height: 35px;
+				}
 			}
-		}
-		@media (min-width: 1200px) {
-			.hero svg {
-				height: 55px;
+			@media (min-width: 992px) {
+				.hero svg {
+					height: 45px;
+				}
 			}
-		}
+			@media (min-width: 1200px) {
+				.hero svg {
+					height: 55px;
+				}
+			}
 		</style>
 		<div class="hero adjust-for-navbar">
 
@@ -102,15 +101,48 @@
 				<div>
 					<h2>Hi, I'm Steve</h2>
 					<p>{ husband / father / web developer }</p>
-					<div><a href="img/Steve_Leschisin_Resume.pdf" type="button" class="btn btn-lg">View my resume</a></div>
+					<div><a href="img/Steve_Leschisin_Resume.pdf" type="button" class="button">View my resume</a></div>
 				</div>
 			</div>
 
-			<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1000 100"> <path class="elementor-shape-fill" d="M500,98.9L0,6.1V0h1000v6.1L500,98.9z"></path> </svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+				<path class="elementor-shape-fill" d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
+			</svg>
 
 		</div>
 
 		<style>
+			.button {
+				display: inline-block;
+				color: #FFF !important;
+				font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+				font-weight: 700;
+				background: var(--brand-primary);
+				text-transform: uppercase;
+				border-radius: 30px;
+				padding: 12px 25px;
+				outline: none !important;
+				box-shadow: none;
+				text-decoration: none !important;
+			}
+			section h2 {
+				margin-bottom: 60px;
+			}
+			section h2 span {
+				position: relative;
+			}
+			section h2 span:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -10px;
+				display: inline;
+				margin: auto;
+				height: 2px;
+				width: 100px;
+				background: var(--brand-primary);
+			}
 			.about {
 				padding: 60px 0;
 				font-family: var(--montserrat);
@@ -118,14 +150,30 @@
 			}
 			.about .headshot img {
 				margin-top: 60px;
-				border-radius: 30px;
-				max-width: 350px;
+				border-radius: 50%;
+				max-width: 300px;
 				box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 			}
+			@media (min-width: 576px) {
+
+			}
+			@media (min-width: 768px) {
+
+			}
 			@media (min-width: 992px) {
+				.about {
+					padding: 120px 0;
+				}
 				.about .headshot img {
 					margin: 0;
 				}
+			}
+			@media (min-width: 1200px) {
+
+				.button {
+					font-size: 16px;
+				}
+
 			}
 		</style>
 
@@ -135,11 +183,17 @@
 
 				<div class="row">
 
+					<div class="col-12 text-center">
+
+						<h2><span>About Me</span></h2>
+
+					</div>
+
 					<div class="col-12 col-lg-7 d-flex justify-content-center align-items-center">
 
 						<div>
 
-							<p>Okay, so by now you've probably figured out that the good boy pictured above isn't me. This is me, nice to meet you.</p>
+							<p>Okay, so by now you've probably figured out that the good boy pictured above isn't me. Hi, my name is Steve, welcome to my website.</p>
 
 							<p>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
 
