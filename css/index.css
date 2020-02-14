@@ -187,7 +187,7 @@ section h2 span:after {
 	height: 400px;
 }
 	.hero svg,
-	section svg {
+	section .angled-border {
 		height: 15px;
 		position: absolute;
 		bottom: 0;
@@ -226,25 +226,25 @@ section h2 span:after {
 		}
 @media (min-width: 576px) {
 	.hero svg,
-	section svg {
+	section .angled-border {
 		height: 25px;
 	}
 }
 @media (min-width: 768px) {
 	.hero svg,
-	section svg {
+	section .angled-border {
 		height: 35px;
 	}
 }
 @media (min-width: 992px) {
 	.hero svg,
-	section svg {
+	section .angled-border {
 		height: 45px;
 	}
 }
 @media (min-width: 1200px) {
 	.hero svg,
-	section svg {
+	section .angled-border {
 		height: 55px;
 	}
 }

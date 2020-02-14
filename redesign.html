@@ -130,61 +130,62 @@
 			</div>
 		</section>
 
-		<!-- QUOTE -->
+
+
+
+
 		<style>
-			.quote {
-				background:#F2F2F2;
-				font-weight: 300;
-				text-align: center;
-				font-size: 1rem;
-				font-style: italic;
-				box-shadow: inset 0px 20px 20px -20px rgba(0,0,0,0.1), inset 0px -20px 20px -20px rgba(0,0,0,0.1);
+			.video-bg {
+				position: relative;
+				overflow: hidden;
+				height: 250px;
+				-webkit-filter: grayscale(1);
+				filter: grayscale(1);
 			}
-			.quote svg {
-				color: #999;
+			.video-bg video {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: 0;
+				min-width: 100%;
+				min-height: 100%;
+			}
+			@media (min-width: 576px) {
+				.video-bg {
+					height: 300px;
+				}
 			}
 			@media (min-width: 768px) {
-				.quote {
-					font-size: 1.25rem;
+				.video-bg {
+					height: 350px;
 				}
 			}
 			@media (min-width: 992px) {
-				.quote {
-					font-size: 1.5rem;
+				.video-bg {
+					height: 400px;
+				}
+			}
+			@media (min-width: 1200px) {
+				.video-bg {
+					height: 450px;
 				}
 			}
 		</style>
-		<section class="quote">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-auto">
-						<i class="fas fa-quote-left"></i>
-					</div>
-
-					<div class="col">
-						<div id="quoteCarousel" class="carousel slide" data-ride="carousel">
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									My ancestors are smiling at me imperial, can you say the same?
-								</div>
-								<div class="carousel-item">
-									It's time to kick ass and chew bubblegum... and I'm all outta gum.
-								</div>
-								<div class="carousel-item">
-									I used to be an adventurer like you, until I took an arrow to the knee.
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-auto">
-						<i class="fas fa-quote-right"></i>
-					</div>
-
-				</div>
-			</div>
+		<!-- VIDEO -->
+		<section class="video-bg">
+			<video autoplay muted loop>
+				<source src="media/starry-night-sky.mp4" type="video/mp4">
+			</video>
+			<svg class="angled-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+				<path class="elementor-shape-fill" d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
+			</svg>
 		</section>
+
+
+
+
+
+
 
 		<style>
 			.portfolio a {
@@ -245,52 +246,68 @@
 		</section>
 
 
+
+
+
+
+
+
+		<!-- QUOTE -->
 		<style>
-			.video-bg {
-				position: relative;
-				overflow: hidden;
-				height: 300px;
-				-webkit-filter: grayscale(1);
-				filter: grayscale(1);
+			.quote {
+				background:#F2F2F2;
+				font-weight: 300;
+				text-align: center;
+				font-size: 1rem;
+				font-style: italic;
+				box-shadow: inset 0px 20px 20px -20px rgba(0,0,0,0.1), inset 0px -20px 20px -20px rgba(0,0,0,0.1);
 			}
-			.video-bg video {
-				position: absolute;
-				left: 50%;
-				transform: translateX(-50%);
-				bottom: 0;
-				min-width: 100%;
-				min-height: 100%;
-			}
-			@media (min-width: 576px) {
-				.video-bg {
-					height: 350px;
-				}
+			.quote svg {
+				color: #999;
 			}
 			@media (min-width: 768px) {
-				.video-bg {
-					height: 400px;
+				.quote {
+					font-size: 1.25rem;
 				}
 			}
 			@media (min-width: 992px) {
-				.video-bg {
-					height: 450px;
-				}
-			}
-			@media (min-width: 1200px) {
-				.video-bg {
-					height: 500px;
+				.quote {
+					font-size: 1.5rem;
 				}
 			}
 		</style>
-		<!-- VIDEO -->
-		<section class="video-bg">
-			<video autoplay muted loop>
-				<source src="media/starry-night-sky.mp4" type="video/mp4">
-			</video>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-				<path class="elementor-shape-fill" d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
-			</svg>
+		<section class="quote">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-auto">
+						<i class="fas fa-quote-left"></i>
+					</div>
+
+					<div class="col">
+						<div id="quoteCarousel" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									My ancestors are smiling at me imperial, can you say the same?
+								</div>
+								<div class="carousel-item">
+									It's time to kick ass and chew bubblegum... and I'm all outta gum.
+								</div>
+								<div class="carousel-item">
+									I used to be an adventurer like you, until I took an arrow to the knee.
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-auto">
+						<i class="fas fa-quote-right"></i>
+					</div>
+
+				</div>
+			</div>
 		</section>
+
 
     <script>
 			document.addEventListener('DOMContentLoaded', function() {
