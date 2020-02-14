@@ -8,18 +8,79 @@
 	--montserrat: 'Montserrat', sans-serif;
 }
 
-/* TEMP */
-html {
-	height: 10000px !important;
-}
 
-/* HELPERS */
+
+
+/* GLOBAL ELEMENTS */
 body.no-overflow {
 	overflow-y: hidden;
 }
 .adjust-for-navbar {
 	padding-top: var(--header-height);
 }
+.sl-btn {
+	display: inline-block;
+	color: #FFF;
+	font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+	font-weight: 700;
+	background: var(--brand-primary);
+	text-transform: uppercase;
+	border-radius: 30px;
+	padding: 12px 25px;
+	outline: none !important;
+	box-shadow: none;
+	text-decoration: none !important;
+}
+.sl-btn:hover {
+	color: #FFF;
+}
+.sl-btn.secondary {
+	color: var(--brand-primary);
+	border: 2px solid var(--brand-primary);
+	background: #FFF;
+	padding: 5px 15px;
+	text-transform: none;
+}
+section {
+	padding: 60px 0;
+	font-family: var(--montserrat);
+	line-height: 2;
+}
+section h2 {
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+}
+section h2 span {
+	position: relative;
+}
+section h2 span:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+	display: inline;
+	margin: auto;
+	height: 2px;
+	width: 50px;
+	background: var(--brand-primary);
+}
+@media (min-width: 576px) {}
+@media (min-width: 768px) {}
+@media (min-width: 992px) {
+	section {
+		padding: 120px 0;
+	}
+}
+@media (min-width: 1200px) {
+	.sl-btn {
+		font-size: 16px;
+	}
+}
+
+
+
 
 /* STICKY NAVBAR */
 .sticky-navbar {
@@ -114,12 +175,23 @@ body.no-overflow {
 				}
 				
 
+
+
+
 /* HERO */
 .hero {
 	position: relative;
 	overflow: hidden;
 	height: 400px;
 }
+	.hero svg {
+		height: 15px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		fill: #FFF !important;
+	}
 	.hero .hero-bg {
 		position: absolute;
 		z-index: -1;
@@ -149,6 +221,33 @@ body.no-overflow {
 			font-weight: 600;
 			text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 		}
+@media (min-width: 576px) {
+	.hero svg {
+		height: 25px;
+	}
+}
+@media (min-width: 768px) {
+	.hero svg {
+		height: 35px;
+	}
+}
+@media (min-width: 992px) {
+	.hero svg {
+		height: 45px;
+	}
+}
+@media (min-width: 1200px) {
+	.hero svg {
+		height: 55px;
+	}
+}
+
+
+
+
+
+
+
 
 /* SMALL+ */
 @media (min-width: 576px) {

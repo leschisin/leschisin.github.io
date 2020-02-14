@@ -65,36 +65,6 @@
 		</div>
 
 		<!-- HERO -->
-		<style>
-			.hero svg {
-				height: 15px;
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				fill: #FFF !important;
-			}
-			@media (min-width: 576px) {
-				.hero svg {
-					height: 25px;
-				}
-			}
-			@media (min-width: 768px) {
-				.hero svg {
-					height: 35px;
-				}
-			}
-			@media (min-width: 992px) {
-				.hero svg {
-					height: 45px;
-				}
-			}
-			@media (min-width: 1200px) {
-				.hero svg {
-					height: 55px;
-				}
-			}
-		</style>
 		<div class="hero adjust-for-navbar">
 
 			<div class="hero-bg"></div>
@@ -114,92 +84,27 @@
 		</div>
 
 		<style>
-			.sl-btn {
-				display: inline-block;
-				color: #FFF;
-				font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
-				font-weight: 700;
-				background: var(--brand-primary);
-				text-transform: uppercase;
-				border-radius: 30px;
-				padding: 12px 25px;
-				outline: none !important;
-				box-shadow: none;
-				text-decoration: none !important;
-			}
-			.sl-btn:hover {
-				color: #FFF;
-			}
-			.sl-btn.secondary {
-				color: var(--brand-primary);
-				border: 2px solid var(--brand-primary);
-				background: #FFF;
-				padding: 5px 15px;
-				text-transform: none;
-			}
-			section {
-				padding: 60px 0;
-			}
-			section h2 {
-				font-weight: 300;
-				text-transform: uppercase;
-				margin-bottom: 60px;
-			}
-			section h2 span {
-				position: relative;
-			}
-			section h2 span:after {
-				content: '';
-				position: absolute;
-				left: 0;
-				right: 0;
-				bottom: -10px;
-				display: inline;
-				margin: auto;
-				height: 2px;
-				width: 50px;
-				background: var(--brand-primary);
-			}
-			.about {
-				font-family: var(--montserrat);
-				line-height: 2;
-			}
+			/* ABOUT SECTION */
 			.about .headshot img {
 				margin-top: 60px;
 				border-radius: 50%;
 				max-width: 300px;
 				box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 			}
-			@media (min-width: 576px) {
-
-			}
-			@media (min-width: 768px) {
-
-			}
+			@media (min-width: 576px) {}
+			@media (min-width: 768px) {}
 			@media (min-width: 992px) {
-				section {
-					padding: 120px 0;
-				}
 				.about .headshot img {
 					margin: 0;
 				}
 			}
-			@media (min-width: 1200px) {
-
-				.sl-btn {
-					font-size: 16px;
-				}
-
-			}
+			@media (min-width: 1200px) {}
 		</style>
 
 		<!-- ABOUT -->
 		<section class="about">
-
 			<div class="container">
-
 				<div class="row">
-
 					<div class="col-12 text-center">
 
 						<h2><span>About Me</span></h2>
@@ -207,39 +112,27 @@
 					</div>
 
 					<div class="col-12 col-lg-7 d-flex justify-content-center align-items-center">
-
 						<div>
-
 							<p>I'm a web developer based in Fort Worth, Texas. I have over six years of experience working on some of the largest toy websites in the world. </p>
-
 							<p>I excel in collaborating with designers and marketing analysts to turn concepts into reality. I love taking designs/ideas and making pixel perfect, fully responsive and mobile friendly user experiences.</p>
-
-							<p>When I'm not working I enjoy spending time with my wife, our two sons, and our two dogs. I also enjoy PC gaming and Marvel movies.</p>
-
-							<div class="text-center text-lg-left">
+							<p class="mb-0">When I'm not working I enjoy spending time with my wife, our two sons, and our two dogs. I also enjoy PC gaming and Marvel movies.</p>
+							<div class="text-center text-lg-left mt-5">
 								<a class="sl-btn secondary" href="https://leschisin.github.io/about">Learn more about me</a>
 							</div>
-
 						</div>
-
 					</div>
 
 					<div class="headshot d-none col-lg-5 d-lg-flex justify-content-center align-items-center">
-
 						<img src="img/headshot.jpg" alt="Steve Leschisin" />
-
 					</div>
 
 				</div>
-
 			</div>
-
 		</section>
 
 		<!-- QUOTE -->
 		<style>
 			.quote {
-				font-family: var(--montserrat);
 				background:#F2F2F2;
 				font-weight: 300;
 				text-align: center;
@@ -262,9 +155,7 @@
 			}
 		</style>
 		<section class="quote">
-
 			<div class="container">
-
 				<div class="row">
 
 					<div class="col-auto">
@@ -272,7 +163,6 @@
 					</div>
 
 					<div class="col">
-
 						<div id="quoteCarousel" class="carousel slide" data-ride="carousel">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
@@ -286,7 +176,6 @@
 								</div>
 							</div>
 						</div>
-						
 					</div>
 
 					<div class="col-auto">
@@ -294,27 +183,65 @@
 					</div>
 
 				</div>
-
 			</div>
-
 		</section>
 
+		<style>
+			.portfolio a {
+				text-decoration: none;
+				color: #000;
+			}
+			.portfolio .img-fluid {
+				-webkit-filter: brightness(0.5) grayscale(1);
+				filter: brightness(0.5) grayscale(1);
+				transition: all 0.4s;
+			}
+			.portfolio .img-fluid:hover {
+				filter: brightness(1) grayscale(0);
+			}
+			.portfolio h3 {
+				font-size: 1rem;
+			}
+		</style>
+		<!-- PORTFOLIO -->
 		<section class="portfolio">
-
 			<div class="container">
 
 				<div class="row">
-
 					<div class="col-12 text-center">
-
 						<h2><span>Portfolio</span></h2>
-
 					</div>
-
 				</div>
 
-			</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-4 d-flex justify-content-center align-items-center mb-5">
+						<a class="text-center" href="#">
+							<img class="img-fluid" src="img/ag_ecom.jpg" alt="American Girl Ecom" />
+							<h3 class="mt-3">American Girl Ecom</h3>
+						</a>
+					</div>
+					<div class="d-none col-md-4 d-md-flex justify-content-center align-items-center mb-5">
+						<a class="text-center" href="#">
+							<img class="img-fluid" src="img/ag_play.png" alt="American Girl Play" />
+							<h3 class="mt-3">American Girl Play</h3>
+						</a>
+					</div>
+					<div class="d-none col-md-4 d-md-flex justify-content-center align-items-center mb-5">
+						<a class="text-center" href="#">
+							<img class="img-fluid" src="img/ag_retail.png" alt="American Girl Retail" />
+							<h3 class="mt-3">American Girl Retail</h3>
+						</a>
+					</div>
+				</div>
 
+				<div class="row">
+					<div class="col text-center">
+						<a class="sl-btn secondary" href="https://leschisin.github.io/portfolio">See more of my work</a>
+					</div>
+				</div>
+
+				</div>
+			</div>
 		</section>
 
     <script>
