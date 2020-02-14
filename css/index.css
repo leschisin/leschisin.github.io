@@ -8,7 +8,9 @@
 	--montserrat: 'Montserrat', sans-serif;
 }
 
-
+html {
+	height: 10000px;
+}
 
 
 /* GLOBAL ELEMENTS */
@@ -184,7 +186,8 @@ section h2 span:after {
 	overflow: hidden;
 	height: 400px;
 }
-	.hero svg {
+	.hero svg,
+	section svg {
 		height: 15px;
 		position: absolute;
 		bottom: 0;
@@ -222,22 +225,26 @@ section h2 span:after {
 			text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 		}
 @media (min-width: 576px) {
-	.hero svg {
+	.hero svg,
+	section svg {
 		height: 25px;
 	}
 }
 @media (min-width: 768px) {
-	.hero svg {
+	.hero svg,
+	section svg {
 		height: 35px;
 	}
 }
 @media (min-width: 992px) {
-	.hero svg {
+	.hero svg,
+	section svg {
 		height: 45px;
 	}
 }
 @media (min-width: 1200px) {
-	.hero svg {
+	.hero svg,
+	section svg {
 		height: 55px;
 	}
 }
