@@ -154,7 +154,7 @@
 				display: inline;
 				margin: auto;
 				height: 2px;
-				width: 100px;
+				width: 50px;
 				background: var(--brand-primary);
 			}
 			.about {
@@ -190,6 +190,7 @@
 			}
 		</style>
 
+		<!-- ABOUT -->
 		<section class="about">
 
 			<div class="container">
@@ -210,7 +211,7 @@
 
 							<p>I excel in collaborating with designers and marketing analysts to turn concepts into reality. I love taking designs/ideas and making pixel perfect, fully responsive and mobile friendly user experiences.</p>
 
-							<p>When i'm not working I enjoy spending time with my wife, our two sons, and our two dogs. I also enjoy PC gaming and Marvel movies.</p>
+							<p>When I'm not working I enjoy spending time with my wife, our two sons, and our two dogs. I also enjoy PC gaming and Marvel movies.</p>
 
 							<div class="text-center text-lg-left">
 								<a class="sl-btn secondary" href="https://leschisin.github.io/about">Learn more about me</a>
@@ -232,19 +233,25 @@
 
 		</section>
 
+		<!-- QUOTE -->
 		<style>
 			.quote {
 				background:#F2F2F2;
 				font-weight: 300;
 				text-align: center;
-				font-size: 1.5rem;
+				font-size: 1.25rem;
 				font-style: italic;
-				box-shadow: inset 0px 0px 20px rgba(0,0,0,0.1);
+				box-shadow: inset 0px 20px 20px -20px rgba(0,0,0,0.1), inset 0px -20px 20px -20px rgba(0,0,0,0.1);
 			}
 			.quote svg {
 				color: #999;
 			}
 			@media (min-width: 768px) {
+				.quote {
+					font-size: 1.5rem;
+				}
+			}
+			@media (min-width: 992px) {
 				.quote {
 					font-size: 2rem;
 				}
@@ -261,11 +268,43 @@
 					</div>
 
 					<div class="col">
-						My ancestors are smiling at me imperial, can you say the same?
+
+						<div id="quoteCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									My ancestors are smiling at me imperial, can you say the same?
+								</div>
+								<div class="carousel-item">
+									It's time to kick ass and chew bubblegum... and I'm all outta gum.
+								</div>
+								<div class="carousel-item">
+									I used to be an adventurer like you, until I took an arrow to the knee.
+								</div>
+							</div>
+						</div>
+						
 					</div>
 
 					<div class="col-auto">
 						<i class="fas fa-quote-right"></i>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="portfolio">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-12 text-center">
+
+						<h2><span>Portfolio</span></h2>
+
 					</div>
 
 				</div>
