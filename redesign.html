@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
 		<script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js" defer></script>
 		<script src="js/index.js" defer></script>
 
   </head>
@@ -140,6 +141,8 @@
 				padding: 60px 0;
 			}
 			section h2 {
+				font-weight: 300;
+				text-transform: uppercase;
 				margin-bottom: 60px;
 			}
 			section h2 span {
@@ -236,10 +239,11 @@
 		<!-- QUOTE -->
 		<style>
 			.quote {
+				font-family: var(--montserrat);
 				background:#F2F2F2;
 				font-weight: 300;
 				text-align: center;
-				font-size: 1.25rem;
+				font-size: 1rem;
 				font-style: italic;
 				box-shadow: inset 0px 20px 20px -20px rgba(0,0,0,0.1), inset 0px -20px 20px -20px rgba(0,0,0,0.1);
 			}
@@ -248,12 +252,12 @@
 			}
 			@media (min-width: 768px) {
 				.quote {
-					font-size: 1.5rem;
+					font-size: 1.25rem;
 				}
 			}
 			@media (min-width: 992px) {
 				.quote {
-					font-size: 2rem;
+					font-size: 1.5rem;
 				}
 			}
 		</style>
@@ -270,7 +274,7 @@
 					<div class="col">
 
 						<div id="quoteCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-							<div class="carousel-inner d-flex">
+							<div class="carousel-inner">
 								<div class="carousel-item active">
 									My ancestors are smiling at me imperial, can you say the same?
 								</div>
@@ -319,15 +323,16 @@
 				// WINDOW SCROLL FUNCTIONS
 				window.addEventListener('scroll', () => {
 
-					transformNavbar();
-					transformHero();
+					debounce(transformNavbar(), 250);
+					debounce(transformHero(), 250);
 
 				});
 
 				// WINDOW RESIZE FUNCTIONS
 				window.addEventListener('resize', () => {
 
-					navReset();
+					debounce(navReset(), 250);
+					debounce(checkCarouselItems(), 250);
 
 				});
 
@@ -336,8 +341,9 @@
 
 					// MOBILE MENU LOAD FLICKER FIX
 					document.querySelector('.menu.mobile').style.display = 'block';
-
+					
 					navReset();
+					checkCarouselItems();
 
 				});
 
@@ -396,6 +402,41 @@
 					heroBox.style.transform = 'translateY(' + (scrollHeight * 0.1) + '%) scale(' + ((scrollHeight / 1000) + 1) + ',' + ((scrollHeight / 1000) + 1) + ')';
 					heroBox.style.filter = 'brightness(' + (50 - (scrollHeight * 0.05)) + '%) grayscale(1)';
 				}
+
+				// CAROUSEL ITEMS HEIGHT
+				checkCarouselItems = () => {
+					let carouselItems = [];
+					document.querySelectorAll('.carousel-item').forEach((el) => {
+						el.style.height = 'auto';
+						if(el.classList.contains('active') == true) {
+							carouselItems.push(el.clientHeight);
+						} else {
+							el.classList.add('active');
+							carouselItems.push(el.clientHeight);
+							el.classList.remove('active');
+						}
+					});
+					let quoteHeight = Math.max.apply({}, carouselItems);
+					document.querySelectorAll('.carousel-item').forEach((el) => {
+						el.style.height = quoteHeight + 'px';
+					});
+				}
+
+				// DEBOUNCE
+				debounce = (func, wait, immediate) => {
+					var timeout;
+					return function() {
+						var context = this, args = arguments;
+						var later = function() {
+							timeout = null;
+							if (!immediate) func.apply(context, args);
+						};
+						var callNow = immediate && !timeout;
+						clearTimeout(timeout);
+						timeout = setTimeout(later, wait);
+						if (callNow) func.apply(context, args);
+					};
+				};
 
 			});
 		</script>
