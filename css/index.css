@@ -8,11 +8,6 @@
 	--montserrat: 'Montserrat', sans-serif;
 }
 
-html {
-	height: 10000px;
-}
-
-
 /* GLOBAL ELEMENTS */
 body.no-overflow {
 	overflow-y: hidden;
@@ -42,6 +37,14 @@ body.no-overflow {
 	background: #FFF;
 	padding: 5px 15px;
 	text-transform: none;
+}
+.form-control:focus,
+.sl-btn:focus {
+	border-color: var(--brand-primary);
+	box-shadow: 0 0 0 0.2rem rgba(246, 36, 89, 0.25);
+}
+label {
+	font-weight: 500;
 }
 section {
 	padding: 60px 0;
