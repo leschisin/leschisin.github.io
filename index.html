@@ -1,93 +1,429 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
 
     <!-- META -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Steve Leschisin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Steve Leschisin</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/hamburgers.min.css">
+		<link rel="stylesheet" href="css/index.css">
 
-    <!-- JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script defer src="js/index.js"></script>
+		<!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
+		<script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js" defer></script>
+		<script src="js/index.js" defer></script>
 
   </head>
   <body>
 
-    <!-- HEADER -->
-    <header class="navbar is-fixed-top">
-      <nav class="level is-fullwidth">
-        <div class="level-item header-brand has-text-left-mobile">
-          <span class="is-hidden-mobile is-size-3"><a href="https://leschisin.github.io">Steve Leschisin</a></span>
-          <span class="is-hidden-tablet is-size-3">SL</span>
-        </div>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </nav>
-    </header>
+		<!-- STICKY NAVBAR -->
+		<div class="sticky-navbar fixed-top px-0">
 
-    <!-- MENU -->
-    <div class="site-menu is-hidden">
-      <div class="has-text-centered">
-        <a class="menu-item is-size-3-mobile is-size-2-tablet is-size-1-desktop" href="https://leschisin.github.io/img/Steve_Leschisin_Resume.pdf" target="_blank">Resume</a>
-        <a class="menu-item is-size-3-mobile is-size-2-tablet is-size-1-desktop" href="https://www.linkedin.com/in/leschisin" target="_blank">LinkedIn</a>
-      </div>
-    </div>
+			<div class="container-fluid">
+				
+				<header class="d-flex align-items-center">
+					
+					<!-- BRAND/LOGO -->
+					<a class="brand" href="https://leschisin.github.io">
+						steve<span>.</span>leschisin
+					</a>
 
-    <!-- BADGE -->
-    <div class="site-badge">
-      <img src="img/badge.jpg" alt="Steve Leschisin" />
-    </div>
+					<!-- MENU -->
+					<nav class="ml-auto">
+						<div class="menu desktop d-none d-md-block">
+							<a href="https://leschisin.github.io">Home</a>
+							<a href="https://leschisin.github.io/about">About</a>
+							<a href="https://leschisin.github.io/portfolio">Portfolio</a>
+							<a href="https://leschisin.github.io/contact">Contact</a>
+						</div>
+						<div class="d-block d-md-none d-flex">
+							<button class="hamburger hamburger--spin" type="button">
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+								</span>
+							</button>
+						</div>
+						<div class="menu mobile">
+							<a href="https://leschisin.github.io">Home</a>
+							<a href="https://leschisin.github.io/about">About</a>
+							<a href="https://leschisin.github.io/portfolio">Portfolio</a>
+							<a href="https://leschisin.github.io/contact">Contact</a>
+						</div>
+					</nav>
 
-    <!-- MAIN CONTENT -->
-    <main class="has-navbar-fixed-top">
-    
-      <section class="hero-badge">
-        <div class="container is-fluid is-flex">
-          <img class="hero-img" data-aos="zoom-in" src="img/badge.jpg" alt="Steve Leschisin" />
-        </div>
-      </section>
+				</header>
 
-      <section class="hero-intro">
-        <div class="container is-fluid has-text-centered" data-aos="zoom-in-up">
-          <h2 class="headline is-size-4-mobile is-size-3-tablet">Husband, Father, Nerd, Web&nbsp;Developer</h2>
-          <p class=" is-size-6-mobile is-size-5-tablet">Hi, I'm Steve. I'm a front end developer based in Fort Worth, TX. For the past 6 years I've served as the Senior Front End Developer for American Girl. I love taking beautiful UX designs and turning them into kick ass websites.</p>
-        </div>
-      </section>
+			</div>
 
-      <section class="expertise">
-        <div class="container is-fullhd has-text-centered">
-          <h2 class="headline is-size-3-mobile is-size-2-tablet is-size-1-desktop" data-aos="fade-up">Expertise</h2>
-          <div class="columns">
-            <div class="column">
-              <div class="box" data-aos="zoom-in-right">
-                <div><i class="fas fa-wrench fa-3x"></i></div>
-                <h3 class="is-size-4-mobile is-size-3-tablet">Technology</h3>
-                <p class="is-size-6-mobile is-size-5-tablet">My wheelhouse is HTML, CSS, Javascript and PHP. Leveraging CSS and JS front-end frameworks, I'm able to rapidly develop UI/UX prototypes that transform into results.</p>
-              </div>
-            </div>
-            <div class="column">
-              <div class="box" data-aos="zoom-in-left">
-                <div><i class="far fa-lightbulb fa-3x"></i></div>
-                <h3 class="is-size-4-mobile is-size-3-tablet">Philosophy</h3>
-                <p class="is-size-6-mobile is-size-5-tablet">I believe in mobile-first, fully responsive websites that value performance and thoughtful interaction above all else. I prefer minimalistic, simple designs that are easy for the user to digest and understand.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+		</div>
 
-    </main>
+		<!-- HERO -->
+		<div class="hero adjust-for-navbar">
 
+			<div class="hero-bg"></div>
+		
+			<div class="hero-text d-flex justify-content-center align-items-center text-center">
+				<div>
+					<h2>Hi, I'm Steve</h2>
+					<p>{ husband / father / web developer }</p>
+					<div><a href="img/Steve_Leschisin_Resume.pdf" type="button" class="sl-btn">View my resume</a></div>
+				</div>
+			</div>
+
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+				<path class="elementor-shape-fill" d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
+			</svg>
+
+		</div>
+
+		<style>
+			/* ABOUT SECTION */
+			.about .headshot img {
+				margin-top: 60px;
+				border-radius: 50%;
+				max-width: 300px;
+				box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+			}
+			@media (min-width: 576px) {}
+			@media (min-width: 768px) {}
+			@media (min-width: 992px) {
+				.about .headshot img {
+					margin: 0;
+				}
+			}
+			@media (min-width: 1200px) {}
+		</style>
+
+		<!-- ABOUT -->
+		<section class="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+
+						<h2><span>About Me</span></h2>
+
+					</div>
+
+					<div class="col-12 col-lg-7 d-flex justify-content-center align-items-center">
+						<div>
+							<p>I'm a web developer based in Fort Worth, Texas. I have over six years of experience working on some of the largest toy websites in the world. </p>
+							<p>I excel in collaborating with designers and marketing analysts to turn concepts into reality. I love taking designs/ideas and making pixel perfect, fully responsive and mobile friendly user experiences.</p>
+							<p class="mb-0">When I'm not working I enjoy spending time with my wife, our two sons, and our two dogs. I also enjoy PC gaming and Marvel movies.</p>
+							<div class="text-center text-lg-left mt-5">
+								<a class="sl-btn secondary" href="https://leschisin.github.io/about">Learn more about me</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="headshot d-none col-lg-5 d-lg-flex justify-content-center align-items-center">
+						<img src="img/headshot.jpg" alt="Steve Leschisin" />
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+		<style>
+			.video-bg {
+				position: relative;
+				overflow: hidden;
+				padding: 0;
+				height: 250px;
+				-webkit-filter: grayscale(1);
+				filter: grayscale(1);
+			}
+			.video-bg video {
+				min-height: 100%;
+			}
+			@media (min-width: 576px) {}
+			@media (min-width: 768px) {
+				.video-bg {
+					height: 300px;
+				}
+			}
+			@media (min-width: 992px) {
+				.video-bg {
+					height: 350px;
+				}
+			}
+			@media (min-width: 1200px) {
+				.video-bg {
+					height: 400px;
+				}
+			}
+		</style>
+		<!-- VIDEO -->
+		<section class="video-bg d-flex align-items-center justify-content-center">
+			<video autoplay muted loop>
+				<source src="media/mtn-sky.mp4" type="video/mp4">
+			</video>
+			<svg class="angled-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+				<path class="elementor-shape-fill" d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
+			</svg>
+		</section>
+
+
+
+
+
+
+
+		<style>
+			.portfolio a {
+				text-decoration: none;
+				color: #000;
+			}
+				.portfolio h3 {
+					font-size: 1rem;
+				}
+				.portfolio .img-fluid {
+					-webkit-filter: brightness(0.5) grayscale(1);
+					filter: brightness(0.5) grayscale(1);
+					transition: all 0.4s;
+				}
+					.portfolio .img-fluid:hover {
+						filter: brightness(1) grayscale(0);
+						box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+					}
+		</style>
+		<!-- PORTFOLIO -->
+		<section class="portfolio">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-12 text-center">
+						<h2><span>Portfolio</span></h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12 col-md-4 d-flex justify-content-center align-items-center mb-5">
+						<a class="text-center" href="#">
+							<img class="img-fluid" src="img/ag_ecom.jpg" alt="American Girl Ecom" />
+							<h3 class="mt-3">American Girl Ecom</h3>
+						</a>
+					</div>
+					<div class="d-none col-md-4 d-md-flex justify-content-center align-items-center mb-5">
+						<a class="text-center" href="#">
+							<img class="img-fluid" src="img/ag_play.png" alt="American Girl Play" />
+							<h3 class="mt-3">American Girl Play</h3>
+						</a>
+					</div>
+					<div class="d-none col-md-4 d-md-flex justify-content-center align-items-center mb-5">
+						<a class="text-center" href="#">
+							<img class="img-fluid" src="img/ag_retail.png" alt="American Girl Retail" />
+							<h3 class="mt-3">American Girl Retail</h3>
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col text-center">
+						<a class="sl-btn secondary" href="https://leschisin.github.io/portfolio">See more of my work</a>
+					</div>
+				</div>
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+		<!-- QUOTE -->
+		<style>
+			.quote {
+				background:#F2F2F2;
+				font-weight: 300;
+				text-align: center;
+				font-size: 1rem;
+				font-style: italic;
+				box-shadow: inset 0px 20px 20px -20px rgba(0,0,0,0.1), inset 0px -20px 20px -20px rgba(0,0,0,0.1);
+			}
+			.quote svg {
+				color: #999;
+			}
+			@media (min-width: 768px) {
+				.quote {
+					font-size: 1.25rem;
+				}
+			}
+			@media (min-width: 992px) {
+				.quote {
+					font-size: 1.5rem;
+				}
+			}
+		</style>
+		<section class="quote">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-auto">
+						<i class="fas fa-quote-left"></i>
+					</div>
+
+					<div class="col">
+						<div id="quoteCarousel" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									My ancestors are smiling at me imperial, can you say the same?
+								</div>
+								<div class="carousel-item">
+									It's time to kick ass and chew bubblegum... and I'm all outta gum.
+								</div>
+								<div class="carousel-item">
+									I used to be an adventurer like you, until I took an arrow to the knee.
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-auto">
+						<i class="fas fa-quote-right"></i>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+    <script>
+			document.addEventListener('DOMContentLoaded', function() {
+
+				// WINDOW SCROLL FUNCTIONS
+				window.addEventListener('scroll', () => {
+
+					debounce(transformNavbar(), 250);
+					debounce(transformHero(), 250);
+
+				});
+
+				// WINDOW RESIZE FUNCTIONS
+				window.addEventListener('resize', () => {
+
+					debounce(navReset(), 250);
+					debounce(checkCarouselItems(), 250);
+
+				});
+
+				// WINDOW LOAD FUNCTIONS
+				window.addEventListener('load', () => {
+
+					// MOBILE MENU LOAD FLICKER FIX
+					document.querySelector('.menu.mobile').style.display = 'block';
+					
+					navReset();
+					checkCarouselItems();
+
+				});
+
+				// HAMBURGER CLICKS
+				document.querySelector('.hamburger').addEventListener('click', () => {
+
+						transformBurger();
+
+				});
+
+				// RESET NAV CLASSES
+				navReset = () => {
+					if(window.innerWidth >= 768) {
+						document.body.classList.remove('no-overflow');
+						document.querySelector('.menu.mobile').classList.remove('is-active');
+						document.querySelector('.hamburger').classList.remove('is-active');
+						if(window.pageYOffset === 0) {
+							document.querySelector('.sticky-navbar').classList.remove('dark');
+						} else if(window.pageYOffset > 0) {
+							document.querySelector('.sticky-navbar').classList.add('dark');
+						}
+					} else {
+						if(window.pageYOffset > 0) {
+							document.querySelector('.sticky-navbar').classList.add('dark');
+						}
+					}
+				}
+
+				// HAMBURGER ACTIONS
+				transformBurger = () => {
+					document.querySelector('.hamburger').classList.toggle('is-active');
+					document.querySelector('.menu.mobile').classList.toggle('is-active');
+					document.body.classList.toggle('no-overflow');
+					let scrollHeight = window.pageYOffset;
+					let navbar			 = document.querySelector('.sticky-navbar');
+					if(scrollHeight === 0) {
+						document.querySelector('.sticky-navbar').classList.toggle('dark');
+					}
+				}
+
+				// NAVBAR
+				transformNavbar = () => {
+					let scrollHeight = window.pageYOffset;
+					let navbar			 = document.querySelector('.sticky-navbar');
+					if(scrollHeight > 0) {
+						navbar.classList.add("dark");
+					} else {
+						navbar.classList.remove("dark");
+					}
+				}
+
+				// PARALLAX/SCALE/BRIGHTNESS FOR HERO ON SCROLL
+				transformHero = () => {
+					let scrollHeight = window.pageYOffset;
+					let heroBox			 = document.querySelector('.hero-bg');
+					heroBox.style.transform = 'translateY(' + (scrollHeight * 0.1) + '%) scale(' + ((scrollHeight / 1000) + 1) + ',' + ((scrollHeight / 1000) + 1) + ')';
+					heroBox.style.filter = 'brightness(' + (50 - (scrollHeight * 0.05)) + '%) grayscale(1)';
+				}
+
+				// CAROUSEL ITEMS HEIGHT
+				checkCarouselItems = () => {
+					let carouselItems = [];
+					document.querySelectorAll('.carousel-item').forEach((el) => {
+						el.style.height = 'auto';
+						if(el.classList.contains('active') == true) {
+							carouselItems.push(el.clientHeight);
+						} else {
+							el.classList.add('active');
+							carouselItems.push(el.clientHeight);
+							el.classList.remove('active');
+						}
+					});
+					let quoteHeight = Math.max.apply({}, carouselItems);
+					document.querySelectorAll('.carousel-item').forEach((el) => {
+						el.style.height = quoteHeight + 'px';
+					});
+				}
+
+				// DEBOUNCE
+				debounce = (func, wait, immediate) => {
+					var timeout;
+					return function() {
+						var context = this, args = arguments;
+						var later = function() {
+							timeout = null;
+							if (!immediate) func.apply(context, args);
+						};
+						var callNow = immediate && !timeout;
+						clearTimeout(timeout);
+						timeout = setTimeout(later, wait);
+						if (callNow) func.apply(context, args);
+					};
+				};
+
+			});
+		</script>
   </body>
 </html>
