@@ -78,7 +78,7 @@
 			</div>
 
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-				<path class="elementor-shape-fill" d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
+				<path d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
 			</svg>
 
 		</div>
@@ -139,38 +139,41 @@
 				position: relative;
 				overflow: hidden;
 				padding: 0;
-				height: 250px;
+				max-height: 250px;
 				-webkit-filter: grayscale(1);
 				filter: grayscale(1);
 			}
 			.video-bg video {
-				min-height: 100%;
+				width: 100%;
 			}
 			@media (min-width: 576px) {}
 			@media (min-width: 768px) {
 				.video-bg {
-					height: 300px;
+					max-height: 300px;
 				}
 			}
 			@media (min-width: 992px) {
 				.video-bg {
-					height: 350px;
+					max-height: 350px;
 				}
 			}
 			@media (min-width: 1200px) {
 				.video-bg {
-					height: 400px;
+					max-height: 400px;
 				}
 			}
 		</style>
 		<!-- VIDEO -->
-		<section class="video-bg d-flex align-items-center justify-content-center">
+		<section class="video-bg d-flex justify-content-center align-items-end">
+
 			<video autoplay muted loop>
 				<source src="media/mtn-sky.mp4" type="video/mp4">
 			</video>
-			<svg class="angled-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-				<path class="elementor-shape-fill" d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
+
+			<svg class="angled-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" style="fill:#FFF;">
+				<path d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
 			</svg>
+
 		</section>
 
 
