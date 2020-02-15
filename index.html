@@ -146,6 +146,9 @@
 			.video-bg video {
 				width: 100%;
 			}
+				.video-bg video::-internal-media-controls-overlay-cast-button {
+					display: none;
+				}
 			@media (min-width: 576px) {}
 			@media (min-width: 768px) {
 				.video-bg {
@@ -166,7 +169,7 @@
 		<!-- VIDEO -->
 		<section class="video-bg d-flex justify-content-center align-items-end">
 
-			<video oncontextmenu="return false;" autoplay muted loop>
+			<video oncontextmenu="return false;" autoplay muted loop playsInline>
 				<source src="media/mtn-sky.mp4" type="video/mp4">
 			</video>
 
