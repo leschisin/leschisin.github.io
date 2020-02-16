@@ -84,24 +84,6 @@
 
 		</div>
 
-		<style>
-			/* ABOUT SECTION */
-			.about .headshot img {
-				margin-top: 60px;
-				border-radius: 50%;
-				max-width: 300px;
-				box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-			}
-			@media (min-width: 576px) {}
-			@media (min-width: 768px) {}
-			@media (min-width: 992px) {
-				.about .headshot img {
-					margin: 0;
-				}
-			}
-			@media (min-width: 1200px) {}
-		</style>
-
 		<!-- ABOUT -->
 		<section class="about">
 			<div class="container">
@@ -131,44 +113,6 @@
 			</div>
 		</section>
 
-
-
-
-
-		<style>
-			.video-bg {
-				position: relative;
-				overflow: hidden;
-				padding: 0;
-				max-height: 250px;
-				-webkit-filter: grayscale(1);
-				filter: grayscale(1);
-			}
-			.video-bg video {
-				width: 100%;
-				-webkit-filter: brightness(50%);
-				filter: brightness(50%);
-			}
-				.video-bg video::-internal-media-controls-overlay-cast-button {
-					display: none;
-				}
-			@media (min-width: 576px) {}
-			@media (min-width: 768px) {
-				.video-bg {
-					max-height: 300px;
-				}
-			}
-			@media (min-width: 992px) {
-				.video-bg {
-					max-height: 350px;
-				}
-			}
-			@media (min-width: 1200px) {
-				.video-bg {
-					max-height: 400px;
-				}
-			}
-		</style>
 		<!-- VIDEO -->
 		<section class="video-bg d-flex justify-content-center align-items-end">
 
@@ -176,36 +120,12 @@
 				<source src="media/waves-on-rocks.mp4" type="video/mp4">
 			</video>
 
-			<svg class="angled-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" style="fill:#FFF;">
+			<svg class="angled-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
 				<path d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
 			</svg>
 
 		</section>
 
-
-
-
-
-
-
-		<style>
-			.portfolio a {
-				text-decoration: none;
-				color: #000;
-			}
-				.portfolio h3 {
-					font-size: 1rem;
-				}
-				.portfolio .img-fluid {
-					-webkit-filter: brightness(0.5) grayscale(1);
-					filter: brightness(0.5) grayscale(1);
-					transition: all 0.4s;
-				}
-					.portfolio .img-fluid:hover {
-						filter: brightness(1) grayscale(0);
-						box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-					}
-		</style>
 		<!-- PORTFOLIO -->
 		<section class="portfolio">
 			<div class="container">
@@ -247,37 +167,7 @@
 			</div>
 		</section>
 
-
-
-
-
-
-
-
 		<!-- QUOTE -->
-		<style>
-			.quote {
-				background: var(--light-gray);
-				font-weight: 300;
-				text-align: center;
-				font-size: 1rem;
-				font-style: italic;
-				box-shadow: inset 0px 20px 20px -20px rgba(0,0,0,0.1), inset 0px -20px 20px -20px rgba(0,0,0,0.1);
-			}
-			.quote svg {
-				color: #999;
-			}
-			@media (min-width: 768px) {
-				.quote {
-					font-size: 1.25rem;
-				}
-			}
-			@media (min-width: 992px) {
-				.quote {
-					font-size: 1.5rem;
-				}
-			}
-		</style>
 		<section class="quote">
 			<div class="container">
 				<div class="row">
@@ -298,8 +188,6 @@
 			</div>
 		</section>
 
-
-
 		<!-- CONTACT ME -->
 		<section class="contact">
 			<div class="container">
@@ -310,6 +198,7 @@
 					</div>
 				</div>
 
+				<!-- CONTACT FORM -->
 				<div class="row">
 					<div class="col">
 						<form id="contact-form">
@@ -338,186 +227,38 @@
 					</div>
 				</div>
 
-				</div>
 			</div>
 
-		<!-- EMAIL MODAL -->
-		<div class="modal fade" id="email-modal" tabindex="-1" role="dialog" aria-labelledby="emailModalTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="emailModalTitle">Thanks for your email...</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<p>I will review your email and get back to you as soon as I am able.</p>
-						<p><strong>Thanks!</strong></p>
+			<!-- EMAIL MODAL -->
+			<div class="modal fade" id="email-modal" tabindex="-1" role="dialog" aria-labelledby="emailModalTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="emailModalTitle">Thanks for your email...</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>I will review your email and get back to you as soon as I am able.</p>
+							<p><strong>Thanks!</strong></p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
 		</section>
 
-
-
-
-		<style>
-			footer {
-				background: var(--light-gray);
-				font-family: var(--montserrat);
-				font-weight: 400;
-				box-shadow: inset 0px 20px 20px -20px rgba(0,0,0,0.1), inset 0px -20px 20px -20px rgba(0,0,0,0.1);
-			}
-			footer .d-flex {
-				height: 80px;
-			}
-		</style>
 		<!-- FOOTER -->
 		<footer>
 			<div class="container">
 				<div class="row">
 					<div class="col d-flex align-items-center justify-content-center">
-						<div>Copyright @ <script>document.write(new Date().getFullYear())</script> Steve Leschisin</div>
+						<div>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Steve Leschisin</div>
 					</div>
 				</div>
 			</div>
 		</footer>
 
-
-    <script>
-			document.addEventListener('DOMContentLoaded', function() {
-
-				// WINDOW SCROLL FUNCTIONS
-				window.addEventListener('scroll', () => {
-
-					debounce(transformNavbar(), 250);
-					debounce(transformHero(), 250);
-
-				});
-
-				// WINDOW RESIZE FUNCTIONS
-				window.addEventListener('resize', () => {
-
-					debounce(navReset(), 250);
-
-				});
-
-				// WINDOW RESIZE FUNCTIONS
-				window.addEventListener('load', () => {
-
-					navReset();
-
-					// MOBILE MENU LOAD FLICKER FIX
-					document.querySelector('.menu.mobile').style.display = 'block';
-
-					//EMAILJS INIT
-					emailjs.init('user_2vEou5iRO1ol0t7D1s3TT');
-
-				});
-
-				// CONTACT FORM
-				document.getElementById('contact-form').addEventListener('submit', function(e) {
-
-					e.preventDefault();
-
-					let user_name_value = document.getElementById('user_name').value;
-					let user_email_value = document.getElementById('user_email').value;
-					let user_subject_value = document.getElementById('user_subject').value;
-					let user_message_value = document.getElementById('user_message').value;
-
-					var template_params = {
-						user_name: user_name_value,
-						user_email: user_email_value,
-						subject: user_subject_value,
-						message: user_message_value
-					}
-
-					var service_id = 'default_service';
-					var template_id = 'portfolio';
-					//emailjs.send(service_id, template_id, template_params);
-
-					$('#email-modal').modal('show');
-
-					document.getElementById('contact-form').reset();
-
-				});
-
-				// HAMBURGER CLICKS
-				document.querySelector('.hamburger').addEventListener('click', () => {
-
-						transformBurger();
-
-				});
-
-				// RESET NAV CLASSES
-				navReset = () => {
-					if(window.innerWidth >= 768) {
-						document.body.classList.remove('no-overflow');
-						document.querySelector('.menu.mobile').classList.remove('is-active');
-						document.querySelector('.hamburger').classList.remove('is-active');
-						if(window.pageYOffset === 0) {
-							document.querySelector('.sticky-navbar').classList.remove('dark');
-						} else if(window.pageYOffset > 0) {
-							document.querySelector('.sticky-navbar').classList.add('dark');
-						}
-					} else {
-						if(window.pageYOffset > 0) {
-							document.querySelector('.sticky-navbar').classList.add('dark');
-						}
-					}
-				}
-
-				// HAMBURGER ACTIONS
-				transformBurger = () => {
-					document.querySelector('.hamburger').classList.toggle('is-active');
-					document.querySelector('.menu.mobile').classList.toggle('is-active');
-					document.body.classList.toggle('no-overflow');
-					let scrollHeight = window.pageYOffset;
-					let navbar			 = document.querySelector('.sticky-navbar');
-					if(scrollHeight === 0) {
-						document.querySelector('.sticky-navbar').classList.toggle('dark');
-					}
-				}
-
-				// NAVBAR
-				transformNavbar = () => {
-					let scrollHeight = window.pageYOffset;
-					let navbar			 = document.querySelector('.sticky-navbar');
-					if(scrollHeight > 0) {
-						navbar.classList.add("dark");
-					} else {
-						navbar.classList.remove("dark");
-					}
-				}
-
-				// PARALLAX/SCALE/BRIGHTNESS FOR HERO ON SCROLL
-				transformHero = () => {
-					let scrollHeight = window.pageYOffset;
-					let heroBox			 = document.querySelector('.hero-bg');
-					heroBox.style.transform = 'translateY(' + (scrollHeight * 0.1) + '%) scale(' + ((scrollHeight / 1000) + 1) + ',' + ((scrollHeight / 1000) + 1) + ')';
-					heroBox.style.filter = 'brightness(' + (50 - (scrollHeight * 0.05)) + '%) grayscale(1)';
-				}
-
-				// DEBOUNCE
-				debounce = (func, wait, immediate) => {
-					var timeout;
-					return function() {
-						var context = this, args = arguments;
-						var later = function() {
-							timeout = null;
-							if (!immediate) func.apply(context, args);
-						};
-						var callNow = immediate && !timeout;
-						clearTimeout(timeout);
-						timeout = setTimeout(later, wait);
-						if (callNow) func.apply(context, args);
-					};
-				};
-
-			});
-		</script>
   </body>
 </html>
