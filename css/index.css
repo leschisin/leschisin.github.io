@@ -347,7 +347,7 @@ section h2 span:after {
 footer {
 	background: var(--light-gray);
 	font-family: var(--montserrat);
-	font-weight: 400;
+	font-weight: 500;
 	box-shadow: inset 0px 20px 20px -20px rgba(0,0,0,0.1), inset 0px -20px 20px -20px rgba(0,0,0,0.1);
 }
 footer .d-flex {

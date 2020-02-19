@@ -1,0 +1,9 @@
+.about img.float-md-right,
+.about img.float-md-left {
+	max-width: 400px;
+	width: 100%;
+}
+.hero .hero-bg {
+	background: url(../img/barn.jpg);
+	background-position: center;
+}
