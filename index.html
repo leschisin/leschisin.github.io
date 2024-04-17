@@ -64,9 +64,17 @@
               d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
           </svg>Download Résumé</a>
       </div>
+
+      <div class="absolute bottom-4 left-0 right-0 z-20 lg:hidden">
+        <svg onclick="arrowScroll1()" class="m-auto w-6 h-6 animate-bounce cursor-pointer hover:text-indigo-600"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+        </svg>
+      </div>
     </div>
     <div class="flex-1">
-      <div class="h-svh flex items-center relative">
+      <div id="profile" class="h-svh flex items-center relative">
         <div class="p-10">
           <h2 class="absolute top-10 left-0 right-0 font-bold text-4xl text-center fancy-text">Steve Leschisin</h2>
           <h3 class="absolute top-24 left-0 right-0 text text-center tracking-wide">SOFTWARE ENGINEER</h3>
@@ -76,7 +84,7 @@
             deadlines.</p>
         </div>
         <div class="absolute bottom-4 left-0 right-0">
-          <svg onclick="arrowScroll()" class="m-auto w-6 h-6 animate-bounce cursor-pointer hover:text-indigo-600"
+          <svg onclick="arrowScroll2()" class="m-auto w-6 h-6 animate-bounce cursor-pointer hover:text-indigo-600"
             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
@@ -200,7 +208,11 @@
   </div>
 
   <script>
-    function arrowScroll() {
+    function arrowScroll1() {
+      const targetDiv = document.getElementById("profile");
+      targetDiv.scrollIntoView({ behavior: "smooth" });
+    }
+    function arrowScroll2() {
       const targetDiv = document.getElementById("employment-history");
       targetDiv.scrollIntoView({ behavior: "smooth" });
     }
