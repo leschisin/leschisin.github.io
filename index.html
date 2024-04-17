@@ -1,18 +1,211 @@
 <!DOCTYPE html>
 
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
     content="Experienced Web Developer | Crafting beautiful, user-friendly web experiences and applications.">
   <meta name="keywords" content="web developer, front end developer, [HTML], [CSS], [JavaScript], [React]">
 
   <title>Steve Leschisin | Experienced Web Developer</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .fancy-text {
+      font-family: "Playfair Display", serif;
+    }
+
+    #hero {
+      background: url('./images/barn2.png');
+      background-size: cover;
+      background-position: right center;
+      filter: grayscale(100%) brightness(25%);
+    }
+
+    li {
+      list-style-type: disc;
+      margin-left: 25px;
+    }
+
+    .weight-500 {
+      font-weight: 500;
+    }
+  </style>
 </head>
 
 <body>
-  
+
+  <div class="lg:flex">
+    <div class="relative h-svh flex items-center justify-center lg:sticky top-0 bg-black text-white flex-1">
+      <div id="hero" class="absolute top-0 left-0 right-0 bottom-0"></div>
+
+      <div class="absolute top-0 bottom-0 left-0 right-32 bottom-0 z-10 p-6">
+        <a target="_blank"
+          class="inline-flex items-center gap-x-1.5 rounded-md bg-indigo-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          href="SteveLeschisinResume.pdf" download="SteveLeschisinResume.pdf"><svg class="w-5 h-5"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+          </svg>Download Résumé</a>
+      </div>
+    </div>
+    <div class="flex-1">
+      <div class="h-svh flex items-center relative">
+        <div class="p-10">
+          <h2 class="absolute top-10 left-0 right-0 font-bold text-4xl text-center fancy-text">Steve Leschisin</h2>
+          <h3 class="absolute top-24 left-0 right-0 text text-center tracking-wide">SOFTWARE ENGINEER</h3>
+          <p class="text-xl text-center">Results-oriented and versatile software developer with 10+ years of experience
+            specializing in
+            front-end development. Dedicated problem solver committed to delivering quality results on tight
+            deadlines.</p>
+        </div>
+        <div class="absolute bottom-4 left-0 right-0">
+          <svg onclick="arrowScroll()" class="m-auto w-6 h-6 animate-bounce cursor-pointer hover:text-indigo-600"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+          </svg>
+        </div>
+      </div>
+      <div id="employment-history" class="p-[3vw]">
+        <h2 class="text-3xl font-bold text-center fancy-text mb-12">Employment History</h2>
+        <article class="relative mb-12">
+          <div class="lg:absolute lg:right-[47.5vw] lg:w-[115px] lg:text-white lg:text-right">January, 2022 - <br
+              class="hidden lg:block" />Current</div>
+          <div class="font-bold text-lg">Software Engineer, Innova Technologies, LLC</div>
+          <div>Fort Worth, TX</div>
+          <div class="mt-4">
+            <p>Developed and maintained:</p>
+            <ul>
+              <li>Two large React applications using React, JavaScript, CSS/Sass, HTML/JSX, Redux, and Bootstrap</li>
+              <li>A React Native application from scratch, building UI and functionalities</li>
+              <li>A brand new application currently under development using React, JavaScript, CSS, Tailwind,
+                Zustand, Headless UI, SignalR, and Axios
+              </li>
+            </ul>
+            <p class="mt-2">Additional Responsibilities:</p>
+            <ul>
+              <li>Mentored junior developers</li>
+              <li>Prototyped new features</li>
+              <li>Employed performance optimization techniques (code splitting, lazy loading, memoization) to
+                improve responsiveness and user experience</li>
+              <li>Implemented JWT token-based authentication across all applications mentioned above</li>
+              <li>Collaborated with stakeholders to design solutions for the front-end of various projects</li>
+              <li>Maintained and wrote C# backend endpoints</li>
+              <li>Utilized WebSockets with SignalR to deliver real-time events on the front-end</li>
+            </ul>
+          </div>
+        </article>
+        <article class="relative mb-12">
+          <div class="lg:absolute lg:right-[47.5vw] lg:w-[115px] lg:text-white lg:text-right">March, 2020 - <br
+              class="hidden lg:block" />January, 2022</div>
+          <div class="font-bold text-lg">Software Engineer, Wilks Brothers IT</div>
+          <div>Fort Worth, TX</div>
+          <div class="mt-4">
+            <ul>
+              <li>Designed and built the front-end of a large-scale React application from scratch, leveraging
+                technologies like React, JavaScript, CSS, HTML, Tailwind, Material UI, and Axios</li>
+              <li>Implemented front-end authentication using JWT tokens, ensuring secure user access</li>
+              <li>Conducted comprehensive testing of C# web APIs, identifying and resolving issues</li>
+              <li>Contributed to the development of new API endpoints and modifcations to existing ones as
+                needed</li>
+              <li>Collaborated closely with the project architect and business partners to translate business
+                requirements into user-friendly features and functionalities</li>
+            </ul>
+          </div>
+        </article>
+        <article class="relative mb-12">
+          <div class="lg:absolute lg:right-[47.5vw] lg:w-[115px] lg:text-white lg:text-right">January, 2018 - <br
+              class="hidden lg:block" />March, 2020</div>
+          <div class="font-bold text-lg">Senior Front End Developer, American Girl</div>
+          <div>Middleton, WI</div>
+          <div class="mt-4">
+            <ul>
+              <li>Key member of a team that successfully optimized the e-commerce website through image
+                and code optimization</li>
+              <li>Led front-end development across all American Girl websites, including e-commerce, Play
+                (children's website), and retail websites</li>
+              <li>Key member of 3 successful e-commerce and CMS migration projects</li>
+              <li>Regularly collaborated with business analysts and designers to guide content updates and user
+                experience enhancements</li>
+              <li>Prototyped website content proposals to visualize potential implementations</li>
+              <li>Conducted A/B testing on updates using a third-party tool to measure data-driven
+                improvements</li>
+              <li>Developed and maintained interactive features of a large dynamic React application for online
+                doll customization</li>
+              <li>Demonstrated fexibility and commitment by supporting critical deployments outside of
+                standard business hours</li>
+              <li>Contributed to a fast-paced environment by delivering high-quality solutions on tight
+                deadlines, including same-day projects</li>
+              <li>Profcient in HTML, CSS, JavaScript, jQuery, and React</li>
+            </ul>
+          </div>
+        </article>
+        <article class="relative mb-12">
+          <div class="lg:absolute lg:right-[47.5vw] lg:w-[115px] lg:text-white lg:text-right">February, 2016 - <br
+              class="hidden lg:block" />January, 2018</div>
+          <div class="font-bold text-lg">Front End Developer, American Girl</div>
+          <div>Middleton, WI</div>
+          <div class="mt-4">
+            <ul>
+              <li>Maintained a large e-commerce website with consistent content updates</li>
+              <li>Managed and updated a child-oriented website, ensuring appropriate content and user
+                experience</li>
+              <li>Supported major product launches by crafting compelling landing pages</li>
+              <li>Developed and implemented regular promotions for the e-commerce platform</li>
+              <li>Built a new retail website from scratch, supporting over 20 physical locations nationwide</li>
+              <li>Managed a WordPress website and supervised an overseas team responsible for content
+                updates</li>
+              <li>Profcient in HTML, CSS, Javascript, jQuery, and PHP</li>
+            </ul>
+          </div>
+        </article>
+        <article class="relative mb-12">
+          <div class="lg:absolute lg:right-[47.5vw] lg:w-[115px] lg:text-white lg:text-right">January, 2014 - <br
+              class="hidden lg:block" />February, 2016</div>
+          <div class="font-bold text-lg">Associate Front End Developer, American Girl</div>
+          <div>Middleton, WI</div>
+          <div class="mt-4">
+            <ul>
+              <li>Contributed to a dynamic e-commerce and play website environment by implementing regular
+                front-end updates</li>
+              <li>Developed and maintained engaging marketing landing pages, adhering to brand guidelines
+                and designer specifcations</li>
+              <li>Collaborated closely with designers to translate Photoshop mockups into pixel-perfect,
+                user-friendly web interfaces</li>
+              <li>Identifed and resolved bugs within the front-end codebase, ensuring a seamless user
+                experience</li>
+              <li>Utilized HTML, CSS, JavaScript, jQuery, and PHP to efectively deliver front-end solutions</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function arrowScroll() {
+      const targetDiv = document.getElementById("employment-history");
+      targetDiv.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
 </body>
 
 </html>
